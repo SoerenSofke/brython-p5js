@@ -1,9 +1,12 @@
+tasks:
+  - init: pip install livereload 
+    command: livereload
+
 ports:
-  - port: 5500
+  - port: 35729
     onOpen: open-preview
     visibility: public
 
 vscode:
   extensions:
-    - ritwickdey.liveserver
     - ms-python.python
