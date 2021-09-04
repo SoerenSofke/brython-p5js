@@ -4,4 +4,4 @@ ports:
     visibility: public
 
 tasks:
-  - command: gp preview $(gp url 5500)/index.html
+  - command: gp open index.html
