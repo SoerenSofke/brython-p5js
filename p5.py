@@ -1,31 +1,31 @@
-from browser import window as p, load  # pylint: disable=import-error
+from browser import window as w  # pylint: disable=import-error
+from browser import load  # pylint: disable=import-error
+
+load("https://cdn.jsdelivr.net/npm/p5@1.4/lib/p5.min.js")
 
 
 class P5:
-    def __init__(self):
-        load("https://cdn.jsdelivr.net/npm/p5@1.4/lib/p5.min.js")
-
     def createCanvas(self, *arg):
-        p.createCanvas(*arg)
+        w.createCanvas(*arg)
 
     def background(self, *arg):
-        p.background(*arg)
+        w.background(*arg)
 
     def fill(self, *arg):
-        p.fill(*arg)
+        w.fill(*arg)
 
     def circle(self, *arg):
-        p.circle(*arg)
+        w.circle(*arg)
 
     @property
     def mouseX(self):
-        return p.mouseX
+        return w.mouseX
 
     @property
     def mouseY(self):
-        return p.mouseY
+        return w.mouseY
 
 
 def export(f):
-    p[f.__name__] = f
+    w[f.__name__] = f
     return f
