@@ -1,4 +1,6 @@
-from browser import window as p
+from browser import window as p, load
+
+load("https://cdn.jsdelivr.net/npm/p5@1.4/lib/p5.min.js")
 
 
 def export(f):
@@ -19,8 +21,5 @@ def draw():
 
 
 @export
-def mousePressed():
+def mousePressed(event):
     p.background(0)
-
-
-p.p5.new()
