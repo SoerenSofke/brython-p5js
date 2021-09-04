@@ -1,6 +1,6 @@
 tasks:
   - init: pip install livereload brython
-    command: livereload && gp open script.py
+    command: gp open script.py && livereload
 
 ports:
   - port: 35729
