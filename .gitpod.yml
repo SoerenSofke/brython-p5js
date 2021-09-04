@@ -2,6 +2,3 @@ ports:
   - port: 5500
     onOpen: open-preview
     visibility: public
-
-tasks:
-  - command: gp open index.html
