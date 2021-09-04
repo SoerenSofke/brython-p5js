@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script type="text/javascript"
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython.js">
+</script>
+<script src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_stdlib.js"></script>
+
+</head>
+<body onload="brython(1)">
+<script type="text/python">
+
+from browser import document, window, alert
+
+def sketch(p):
+
+    def setup():
+        p.createCanvas(700, 410)
+        p.background(0)
+        p.rectMode(p.CENTER)
+    
+    def draw():
+       # p.background(0)
+        p.fill(255,255,0,128)
+        p.ellipse(p.mouseX,p.mouseY,50,50)
+    
+    def mousePressed():
+        p.background(0)
+    
+    p.setup = setup
+    p.draw = draw
+    p.mousePressed = mousePressed
+      
+myp5 = window.p5.new(sketch)
+
+</script>
+</body>
+</html>
