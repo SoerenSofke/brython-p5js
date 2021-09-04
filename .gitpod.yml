@@ -2,3 +2,6 @@ ports:
   - port: 5500
     onOpen: open-preview
     visibility: public
+
+tasks:
+  - command: gp preview $(gp url 5500)/index.html
