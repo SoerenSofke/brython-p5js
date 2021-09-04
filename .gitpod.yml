@@ -4,7 +4,7 @@ tasks:
 
 ports:
   - port: 35729
-    onOpen: open-preview
+    onOpen: ignore
     visibility: public
 
 vscode:
