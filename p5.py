@@ -29,3 +29,6 @@ class P5:
 def export(f):
     w[f.__name__] = f
     return f
+
+
+p = P5()
