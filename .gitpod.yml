@@ -1,9 +1,6 @@
 tasks:
-  - name: Web Server
-    init: pip install livereload brython
-    command: gp open script.py && livereload
-  - name: Start Live Preview
-    command: gp await-port 35729 && sleep 5 && gp preview $(gp url 35729)/index.html && exit
+  - init: pip install livereload brython
+    command: gp open script.py && livereload & gp await-port 35729 && gp preview $(gp url 35729)/index.html && exit
 
 ports:
   - port: 35729
