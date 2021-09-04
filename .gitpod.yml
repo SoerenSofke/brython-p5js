@@ -1,6 +1,6 @@
 tasks:
   - init: pip install livereload brython
-    command: livereload
+    command: livereload && gp open script.py
 
 ports:
   - port: 35729
@@ -10,3 +10,4 @@ ports:
 vscode:
   extensions:
     - ms-python.python
+    - ms-toolsai.jupyter
