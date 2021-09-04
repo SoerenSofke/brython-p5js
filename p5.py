@@ -1,4 +1,4 @@
-from browser import window as p, load
+from browser import window as p, load  # pylint: disable=import-error
 
 
 class P5:
