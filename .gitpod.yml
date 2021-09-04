@@ -3,5 +3,7 @@ ports:
     onOpen: open-preview
     visibility: public
 
-tasks:
-  - command: gp preview $(gp url 5500)/index.html
+vscode:
+  extensions:
+    - ritwickdey.liveserver
+    - ms-python.python
