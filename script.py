@@ -1,4 +1,4 @@
-from p5 import p, export
+from p5js import p5 as p, export
 
 
 @export
