@@ -1,3 +1,5 @@
 {
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "python.languageServer": "Default",
+    "python.formatting.provider": "black",
 }
