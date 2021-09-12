@@ -2,4 +2,5 @@
     "files.autoSave": "onFocusChange",
     "python.languageServer": "Default",
     "python.formatting.provider": "black",
+    "python.autoComplete.addBrackets": true,
 }

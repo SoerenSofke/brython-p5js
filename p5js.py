@@ -20,15 +20,12 @@ class P5:
     def print(self, *arg):
         return window.print(*arg)
 
-    @property
     def frameCount(self):
         return window.frameCount
 
-    @property
     def deltaTime(self):
         return window.deltaTime
 
-    @property
     def focused(self):
         return window.focused
 
@@ -41,30 +38,24 @@ class P5:
     def noCursor(self, *arg):
         return window.noCursor(*arg)
 
-    @property
     def displayWidth(self):
         return window.displayWidth
 
-    @property
     def displayHeight(self):
         return window.displayHeight
 
-    @property
     def windowWidth(self):
         return window.windowWidth
 
-    @property
     def windowHeight(self):
         return window.windowHeight
 
     def windowResized(self, *arg):
         return window.windowResized(*arg)
 
-    @property
     def width(self):
         return window.width
 
-    @property
     def height(self):
         return window.height
 
@@ -303,7 +294,6 @@ class P5:
     def remove(self, *arg):
         return window.remove(*arg)
 
-    @property
     def disableFriendlyErrors(self):
         return window.disableFriendlyErrors
 
@@ -413,7 +403,6 @@ class P5:
     def blendMode(self, *arg):
         return window.blendMode(*arg)
 
-    @property
     def drawingContext(self):
         return window.drawingContext
 
@@ -421,11 +410,10 @@ class P5:
         return window.setAttributes(*arg)
 
     # Foundation
-    @property
+
     def let(self):
         return window.let
 
-    @property
     def const(self):
         return window.const
 
@@ -436,7 +424,7 @@ class P5:
     # <=
 
     # JSON
-    @property
+
     def console(self):
         return window.console
 
@@ -581,59 +569,46 @@ class P5:
 
     # Events
     # Acceleration
-    @property
+
     def deviceOrientation(self):
         return window.deviceOrientation
 
-    @property
     def accelerationX(self):
         return window.accelerationX
 
-    @property
     def accelerationY(self):
         return window.accelerationY
 
-    @property
     def accelerationZ(self):
         return window.accelerationZ
 
-    @property
     def pAccelerationX(self):
         return window.pAccelerationX
 
-    @property
     def pAccelerationY(self):
         return window.pAccelerationY
 
-    @property
     def pAccelerationZ(self):
         return window.pAccelerationZ
 
-    @property
     def rotationX(self):
         return window.rotationX
 
-    @property
     def rotationY(self):
         return window.rotationY
 
-    @property
     def rotationZ(self):
         return window.rotationZ
 
-    @property
     def pRotationX(self):
         return window.pRotationX
 
-    @property
     def pRotationY(self):
         return window.pRotationY
 
-    @property
     def pRotationZ(self):
         return window.pRotationZ
 
-    @property
     def turnAxis(self):
         return window.turnAxis
 
@@ -653,15 +628,13 @@ class P5:
         return window.deviceShaken(*arg)
 
     # Keyboard
-    @property
+
     def keyIsPressed(self):
         return window.keyIsPressed
 
-    @property
     def key(self):
         return window.key
 
-    @property
     def keyCode(self):
         return window.keyCode
 
@@ -678,51 +651,40 @@ class P5:
         return window.keyIsDown(*arg)
 
     # Mouse
-    @property
+
     def movedX(self):
         return window.movedX
 
-    @property
     def movedY(self):
         return window.movedY
 
-    @property
     def mouseX(self):
         return window.mouseX
 
-    @property
     def mouseY(self):
         return window.mouseY
 
-    @property
     def pmouseX(self):
         return window.pmouseX
 
-    @property
     def pmouseY(self):
         return window.pmouseY
 
-    @property
     def winMouseX(self):
         return window.winMouseX
 
-    @property
     def winMouseY(self):
         return window.winMouseY
 
-    @property
     def pwinMouseX(self):
         return window.pwinMouseX
 
-    @property
     def pwinMouseY(self):
         return window.pwinMouseY
 
-    @property
     def mouseButton(self):
         return window.mouseButton
 
-    @property
     def mouseIsPressed(self):
         return window.mouseIsPressed
 
@@ -754,7 +716,7 @@ class P5:
         return window.exitPointerLock(*arg)
 
     # Touch
-    @property
+
     def touches(self):
         return window.touches
 
@@ -794,7 +756,7 @@ class P5:
         return window.imageMode(*arg)
 
     # Pixels
-    @property
+
     def pixels(self):
         return window.pixels
 

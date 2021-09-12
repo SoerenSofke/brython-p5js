@@ -10,7 +10,7 @@ def setup():
 @export
 def draw():
     p.fill(255, 255, 0, 128)
-    p.circle(p.mouseX, p.mouseY, 20)
+    p.circle(p.mouseX(), p.mouseY(), 20)
 
 
 @export
